@@ -1,0 +1,38 @@
+﻿
+
+
+<div class="row">
+
+    <div class="col-10">
+        <h1 class="mb-5">your Table </h1>
+
+    </div>
+    <div class=" col-2">
+        <a href="/Home" type="submit" class=" btn btn-danger"> Go Home</a>
+
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            
+            <th scope="col">patient name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.id</th>
+                <td>@item.Patientname</td>
+                <td>@item.AppointmentDate</td>
+                <td>@item.AppointmentTime</td>
+            </tr>
+        }
+       
+    </tbody>
+</table>

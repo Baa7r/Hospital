@@ -1,0 +1,52 @@
+﻿<style>
+    .main{
+    
+       margin : 150px 50px 50px 50px;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    .main input
+    {
+        width:100%;
+        border-radius:5px;
+    }
+</style>
+<div class="main">
+    <div class="row">
+
+        <div class="col-10">
+            <h1 class="mb-5">Complete Appointment with @Model.Name </h1>
+
+        </div>
+        <div class=" col-2">
+            <a href="/Home/Appointment" type="submit" class=" btn btn-danger"> Doctor list</a>
+
+        </div>
+    </div>
+   
+
+
+    <form action="/Home/CreateData">
+
+        <div class="mb-4">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="name" placeholder="Enter patient name" width="300px" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="DateTime" required>
+
+        </div>
+
+        <div class="mb-4">
+            <label for="appointment-time">Appointment Time:</label>
+            <input type="time" id="appointment-time" name="Time" required>
+        </div>
+
+
+        <button type="submit" class=" btn btn-danger"> Appointment</button>
+    </form>
+
+</div>
